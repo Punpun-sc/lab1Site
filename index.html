@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Atkinson Hyperlegible' rel='stylesheet'>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -20,15 +20,15 @@
     </header>
 
     <nav>
-        <input type="checkbox" id="hamburger" />
+        <input type="checkbox" id="hamburger" onclick="openNav()"/>
 
         <label for="hamburger" class="hamburger">
             <span></span>
             <span></span>
             <span></span></label>
 
-        <div class="slideout">
-            <a href="#kernwaarden">Kernwaarden</a>
+        <div class="slideout" id="slideoutNav" onclick="closeOverlay()">
+            <a href="#kernwaarden" >Kernwaarden</a>
             <a href="#">Doel</a>
             <a href="#">Activiteiten</a>
             <a href="#">Merch</a>

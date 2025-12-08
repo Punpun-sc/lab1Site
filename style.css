@@ -22,14 +22,14 @@ h3 {
     font-size: 2.8em;
     color: #a874d2;
     text-shadow:
-        -2px -2px 0 white,
-        2px -2px 0 white,
-        -2px 2px 0 white,
-        2px 2px 0 white,
-        -2px 0 0 white,
-        2px 0 0 white,
-        0 -2px 0 white,
-        0 2px 0 white;
+        -4px -4px 0 white,
+        4px -4px 0 white,
+        -4px 4px 0 white,
+        4px 4px 0 white,
+        -4px 0 0 white,
+        4px 0 0 white,
+        0 -4px 0 white,
+        0 4px 0 white;
 
     font-weight: 900;
 }
@@ -61,7 +61,7 @@ h3 {
 }
 
 #hamburger {
-    display: none;
+    opacity: 0;
 }
 
 .hamburger {
@@ -109,6 +109,7 @@ h3 {
 }
 
 .slideout {
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -120,6 +121,7 @@ h3 {
 
 #hamburger:checked~.slideout {
     transform: translateY(0);
+    visibility: visible;
 }
 
 a {
