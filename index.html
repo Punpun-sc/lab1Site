@@ -17,27 +17,27 @@
 
 
         </div>
+
+
+        <nav>
+            <input type="checkbox" id="hamburger" onclick="openNav()" />
+
+            <label for="hamburger" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span></label>
+
+            <div class="slideout" id="slideoutNav" onclick="closeOverlay()">
+                <a href="#kernwaarden">Kernwaarden</a>
+                <a href="#doelId">Doel</a>
+                <a href="#">Activiteiten</a>
+                <a href="#">Merch</a>
+                <a href="#">Vragen</a>
+                <a href="#">Contact</a>
+
+            </div>
+        </nav>
     </header>
-
-    <nav>
-        <input type="checkbox" id="hamburger" onclick="openNav()" />
-
-        <label for="hamburger" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span></label>
-
-        <div class="slideout" id="slideoutNav" onclick="closeOverlay()">
-            <a href="#kernwaarden">Kernwaarden</a>
-            <a href="#">Doel</a>
-            <a href="#">Activiteiten</a>
-            <a href="#">Merch</a>
-            <a href="#">Vragen</a>
-            <a href="#">Contact</a>
-
-        </div>
-    </nav>
-
     <main>
         <div class="infoPage" id="algemeneInfo">
             <h1>Zin om je mentale gezondheid te trainen?</h1>
@@ -68,9 +68,11 @@
             </div>
         </div>
 
-        <div class="doel">
+        <div class="doel" id="doelId">
             <h4>Wat is ons doel?</h4>
-            <p>Veel mensen lopen met stress rond, dit willen wij proberen verminderen met onze activiteiten. We zorgen ervoor dat mensen zich mentaal beter voelen en andere mensen die hetzelfde meemaken leren kennen. </p>
+            <p>Veel mensen lopen met stress rond, dit willen wij proberen verminderen met onze activiteiten. We zorgen
+                ervoor dat mensen zich mentaal beter voelen en andere mensen die hetzelfde meemaken leren kennen. </p>
+            <img src="./assets/klimmerFull.svg" alt="klimmers">
         </div>
     </main>
 </body>
