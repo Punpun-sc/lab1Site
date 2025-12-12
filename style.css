@@ -4,6 +4,10 @@ body {
     background-color: #a874d2;
 }
 
+.infoPage{
+    margin-top: 6em;
+}
+
 .doel img{
     position: relative;
     left: -70%;
