@@ -1,22 +1,51 @@
+
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Atkinson Hyperlegible";
     margin: 0;
     background-color: #a874d2;
 }
 
-.infoPage{
+
+.infoPage {
     margin-top: 6em;
 }
 
-.doel img{
-    position: relative;
-    left: -70%;
-    margin-top: -25%;
+.doel p, .activiteiten p{
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.doel p{
+.doel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: clamp(180px, 35vw, 420px);
+}
+
+.doel-bg {
+    position: absolute;
+    left: 20%;
+    bottom: clamp(-40px, -5vw, -120px);
+    transform: translateX(-50%);
+    width: clamp(520px, 120vw, 1400px);
+    max-width: none;
+    height: auto;
+    pointer-events: none;
+}
+
+
+
+
+ p {
     font-size: 1.8em;
-    padding-left: 15px;
     color: white;
 }
 
@@ -29,23 +58,40 @@ h4{
     text-align: center;
 }
 
-.iconsKernwaarden{
-    justify-content: center;
-    display: flex;
-    gap: 40px;
-    margin-top: 40px;
+h5{
+    font-weight: bold;
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
 }
-.icons{
-    align-items: center;
+
+.iconsKernwaarden {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0 15px;
+}
+
+.icons {
+    flex: 0 0 33.3333%;
     text-align: center;
     color: white;
-    display: block;
+
 }
 
 .icons img{
-    width: 80px;
-    margin-bottom: 10px;
+  width: 64px;  
+  max-width: 100%;
+  height: auto;
 }
+
+.icons p{
+  padding: 0;
+  margin-top: 8px;
+  font-size: 1em;
+}
+
 
 h1 {
     margin-bottom: 0;
@@ -105,11 +151,12 @@ h3 {
     background-color: #a874d2;
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
+    z-index: 999;
 }
 
 #hamburger {
