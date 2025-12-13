@@ -25,12 +25,12 @@ h5{
 }
 
 .activity-image{
-    margin-top: -100px;
-    right: 0;
+    display: block;
     width: 100%;
-    position: absolute;
     max-width: 100%;
     height: auto;
+    position: static;
+    margin: 0;
 }
 
 .infoPage {
