@@ -560,3 +560,56 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.hiddenText{
+    display: none;
+}
+
+@media only screen and (min-width:768px){
+
+    html{
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    body{
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    .hiddenText{
+        display: block;
+        max-width: 65%;
+        padding-left: 15px;
+    }
+
+    h1{
+        max-width: 65%;
+        font-weight: bold;
+        font-size: 5em;
+    }
+
+    .mindyImageOne{
+        position: absolute;
+        right: 0;
+        transform: translateX(20%);
+        top: 8em;
+        z-index: -1;
+    }
+
+    .mindyImageOne img{
+        width: 500px;
+    }
+
+    .infoPage{
+        margin-bottom: 200px;
+    }
+
+    .button{
+        position: relative;
+        right: 33.33%;
+        width: 20%;
+    }
+    
+}
