@@ -44,7 +44,7 @@
             <div class="mindyImageOne">
                 <img src="./assets/mindyMainScreen.svg" alt="mindyImage">
             </div>
-            <div class="button" id="Kernwaarden-visible" onclick="openOverlay()">
+            <div class="button" id="Kernwaarden-visible">
                 <h2>Word lid</h2>
             </div>
         </div>
@@ -201,6 +201,14 @@
                         <span>Bericht</span>
                         <textarea name="bericht"></textarea>
                     </label>
+                    <button id="openPopup" type="submit" class="contact-btn">Verstuur</button>
+                    <div class="popup-overlay" id="popup">
+                        <div class="popup">
+                            <button class="close-btn" id="closePopup">&times;</button>
+                            <h2>Verstuurd!</h2>
+                            <p>We antwoorden zo spoedig mogelijk</p>
+                        </div>
+                    </div>
                 </form>
             </section>
 
