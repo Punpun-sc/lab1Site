@@ -11,6 +11,79 @@ body {
     background-color: #a874d2;
 }
 
+.contact {
+    background: #a874d2;
+    padding: 36px 28px 40px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 18px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: grid;
+    gap: 8px;
+}
+
+.contact-form label span {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #222;
+    font-size: 1.2rem;
+}
+
+.contact-form input {
+    border-radius: 999px;
+    height: 52px;
+}
+
+
+.contact-form textarea {
+    border-radius: 28px;
+    min-height: 180px;
+    resize: vertical;
+    padding-top: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact-btn {
+    margin-top: 10px;
+    border: none;
+    border-radius: 999px;
+    padding: 14px 22px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: #2ebfa5;
+    color: white;
+    cursor: pointer;
+}
+
+
+.contact-title {
+    text-align: center;
+}
+
+h7 {
+    color: white;
+    font-size: 4em;
+}
+
 .faq {
     padding: 24px 18px 40px;
     display: grid;
