@@ -5,10 +5,32 @@ body {
     overflow-x: hidden;
 }
 
+.footer p{
+    font-weight: lighter;
+    font-size: 1em;
+}
+
 body {
     font-family: "Atkinson Hyperlegible";
     margin: 0;
     background-color: #a874d2;
+}
+
+.footer-icons{
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    gap: 25px;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer-image img{
+    width: 100%;
+    height: auto;
+    align-items: center;
 }
 
 .contact {
