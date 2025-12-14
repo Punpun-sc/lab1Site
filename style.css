@@ -5,6 +5,41 @@ body {
     overflow-x: hidden;
 }
 
+.join-form {
+    display: grid;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.join-form label {
+    display: grid;
+    gap: 8px;
+}
+
+.join-form label span {
+    color: #1b1b1b;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.join-form input {
+    border: 0;
+    outline: none;
+    background: #fff;
+    color: #222;
+    font-size: 1rem;
+    padding: 12px 16px;
+    height: 48px;
+    border-radius: 999px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, .12);
+}
+
+.join-form input:focus {
+    outline: 3px solid rgba(46, 191, 165, .35);
+    outline-offset: 2px;
+}
+
+
 .popup-overlay {
     position: fixed;
     inset: 0;

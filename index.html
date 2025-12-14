@@ -44,8 +44,8 @@
             <div class="mindyImageOne">
                 <img src="./assets/mindyMainScreen.svg" alt="mindyImage">
             </div>
-            <div class="button" id="Kernwaarden-visible">
-                <h2>Word lid</h2>
+            <div class="button" id="openJoinPopup">
+                <h2 id="Kernwaarden-visible">Word lid</h2>
             </div>
         </div>
 
@@ -234,6 +234,43 @@
             <p>Mindletics @ 2025. All rights reserved.</p>
         </div>
     </footer>
+
+    <div class="popup-overlay" id="joinPopup">
+        <div class="popup">
+            <button class="close-btn" id="closeJoinPopup">&times;</button>
+            <h2>Word lid</h2>
+
+            <form class="join-form" id="joinForm">
+                <label>
+                    <span>Voornaam</span>
+                    <input type="text" name="voornaam" required>
+                </label>
+
+                <label>
+                    <span>Achternaam</span>
+                    <input type="text" name="achternaam" required>
+                </label>
+
+                <label>
+                    <span>Geboortedatum</span>
+                    <input type="date" name="geboortedatum" required>
+                </label>
+
+                <label>
+                    <span>E-mail</span>
+                    <input type="email" name="email" required>
+                </label>
+
+                <label>
+                    <span>Nummer</span>
+                    <input type="tel" name="nummer" inputmode="tel" required>
+                </label>
+
+                <button type="submit" class="contact-btn">Word lid</button>
+            </form>
+        </div>
+    </div>
+
 
 </body>
 

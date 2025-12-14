@@ -1,14 +1,75 @@
-
-
 const nav = document.getElementById("slideoutNav");
 const hamburger = document.getElementById("hamburger");
 const openBtn = document.getElementById("openPopup");
 const closeBtn = document.getElementById("closePopup");
 const popup = document.getElementById("popup");
-const wordLidBtn = document.getElementById("Kernwaarden-visible");
 
-wordLidBtn.addEventListener("click", () => {
-    
+const contactOpenBtn = document.getElementById("openPopup");
+const contactPopup = document.getElementById("popup");
+const contactCloseBtn = document.getElementById("closePopup");
+
+if (contactOpenBtn && contactPopup && contactCloseBtn) {
+    contactOpenBtn.type = "button"; 
+
+    contactOpenBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        contactPopup.classList.add("active");
+        document.body.style.overflow = "hidden";
+    });
+
+    contactCloseBtn.addEventListener("click", () => {
+        contactPopup.classList.remove("active");
+        document.body.style.overflow = "";
+    });
+
+    contactPopup.addEventListener("click", (e) => {
+        if (e.target === contactPopup) {
+            contactPopup.classList.remove("active");
+            document.body.style.overflow = "";
+        }
+    });
+}
+
+
+const joinOpenBtn = document.getElementById("openJoinPopup");
+const joinPopup = document.getElementById("joinPopup");
+const joinCloseBtn = document.getElementById("closeJoinPopup");
+const joinForm = document.getElementById("joinForm");
+
+if (joinOpenBtn && joinPopup && joinCloseBtn) {
+    joinOpenBtn.addEventListener("click", () => {
+        joinPopup.classList.add("active");
+        document.body.style.overflow = "hidden";
+    });
+
+    joinCloseBtn.addEventListener("click", () => {
+        joinPopup.classList.remove("active");
+        document.body.style.overflow = "";
+    });
+
+    joinPopup.addEventListener("click", (e) => {
+        if (e.target === joinPopup) {
+            joinPopup.classList.remove("active");
+            document.body.style.overflow = "";
+        }
+    });
+}
+
+if (joinForm && joinPopup) {
+    joinForm.addEventListener("submit", (e) => {
+        e.preventDefault(); 
+        joinPopup.classList.remove("active");
+        document.body.style.overflow = "";
+        joinForm.reset();
+    });
+}
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        if (contactPopup) contactPopup.classList.remove("active");
+        if (joinPopup) joinPopup.classList.remove("active");
+        document.body.style.overflow = "";
+    }
 });
 
 function closeOverlay() {
@@ -37,4 +98,3 @@ popup.addEventListener("click", (e) => {
         popup.classList.remove("active");
     }
 });
-
